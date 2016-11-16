@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>M.V.C.Angular.JS</title>
+	 <meta charset="utf-8">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body>
+<!--<div ng-controller="ExampleController" class="expressions">
+	Expression:
+	<input type="text" ng-model="expressions" size="80" name="">
+	<button ng-click="expr in track by ($index)">
+		[<a href="" ng-click="removeExp($index)">x</a>]
+		<code>{{expr}}</code>
+	</button>
+</div>-->
+
+<!--<div ng-init="language='AngularJS'">
+	Your Preffered Language: <input type="text" ng-model="language"> {{language}}
+</div>-->
+<div ng-init="myfavlag=[{name:'PHP',extension:'php'},{name:'java',extension:'.java'}]">
+	<p np-repeat="language in myfavlag">
+	Name: {{language.name}}<br>
+	Extension : {{language.extension}}<br>
+	</p>
+</div>
+
+</body>
+</html>
