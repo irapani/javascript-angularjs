@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+	<title> ang </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script></script>
+</head>
+<body>
+<div ng-controller="myCtrl">
+<p my-directive></p> 
+</div>
+<script>
+	var app = angular.module("myApp", []);
+	app.directive("myDirective", function(){
+		return {
+			template: "<h1> this is heading from custom Dir</h1>"
+		}
+	});
+			app.controller("myCtrl",function($scope){
+				$scope.name = "ebase";
+			});
+
+</script>
+
+</body>
+</html>

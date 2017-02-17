@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> ang-two way databinding </title>  
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="angE6.js"> </script>
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myController">
+      <!--  <input type="text" ng-model="message"/> /* ng-model="greating"
+        {{message}}<br/>
+        //{{ greating}} -->
+        <table>
+            <tr>
+                <td> First Name </td>
+                <td>
+                    <input type="text" ng-model="employee.firstName"/>
+                </td>
+            </tr>
+            <td>Last Name</td>
+            <td> 
+                <input type="text" ng-model="employee.lastName"/>
+            </td>
+                <tr>
+                <td> Gender </td>
+                <td>
+                <input type="text" ng-model="employee.Gender"/>
+            </td>
+                    </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td> First Name </td>
+                <td>
+                    {{ employee.firstName }}
+                </td>
+            </tr>
+            <td>Last Name</td>
+            <td> 
+                {{ employee.lastName }}
+            </td>
+            <tr>
+                <td> Gender </td>
+                
+                <td>
+                {{ employee.Gender }}
+            </td>
+                </tr>   
+        </table>
+    </div>
+    
+</body>
+</html>
