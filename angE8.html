@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app+"">
+<head>
+    <meta charset="utf-8">
+    <title> Filters </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="angE7.js">  </script>
+</head>
+    <body ng-app="">
+        your name: 
+        <input type="text" ng-model="name"><br>
+        your name:
+        <input type="text" ng-model="name"><br>
+        Curryency
+        <input type="text" ng-model="price"><br>
+        Numbers:
+        <input type="text" ng-model="number"><br>
+        {{'Welcome '+ name | uppercase }}<br>
+        {{'Welcome '+ name | lowercase }}<br>
+        {{price | currency:"rs. ":2}}
+        {{ number | number:4}}
+    </body>
+</html>
