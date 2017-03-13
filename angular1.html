@@ -1,19 +1,44 @@
-<!DOCTYPE HTML>
-<html lang="en" ng-app="">
-    <head>
-    <meta charset="utf-8">
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    </head>
-    <body >
-    <div ng-init="language='angularjs">
-    your preferred language<input type="text" ng-model="language">{{language}}
-   	</div>
-   	<div ng-init="myFavlag=[{name:'php',extension:'.php'}]">
-	<p np-repeat="language in my Favlag">   
-	Name:{{lang.name}}</br>
-	Extension: {{lag.extension}}</br>
-	</p>		
-   	</div>
-    	</body>
-    	</head>
-    	</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> angular.1 </title>
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<style>
+		table, th, td {
+			border: 1px solid grey;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+			table tr: nth-chlid(odd) {
+				background-color: #f2erg56;
+			}
+			table tr: nth-child(even) {
+				background-color: #ffffff;
+			}
+	</style>
+</head>
+<body>
+	<!-- <h1> Sample Application </h1>
+	<div ng-app ="" ng-init = "quantity = 1; cost = 30; student = {firstname:'uday',lastname:'kumar',rollno:101}; marks = [ 80,90,70,95,80]">
+		<p>Hello {{student.firstname + " " + student.lastname}}!</p>
+		<p>Expense on Books : {{cost + quantity }} rs</p>
+		<p>roll no: {{student.rollno}}</p>
+		<p>marks(Math): {{marks[3]}}</p>
+	</div> -->
+<script>
+	function studentController($scope) {
+		$scope.student = {
+			firstname: 'uday',
+			lastname: 'kumar',
+
+			fullName: function(){
+				var studentObject;
+				studentObject = $scope.student;
+				return studentObject.firstname + " " + studentObject.lastname;
+			}
+		};
+	}
+</script>
+</body>
+
+</html>

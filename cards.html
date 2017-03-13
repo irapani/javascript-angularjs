@@ -1,0 +1,48 @@
+<html lang="en" >
+   <head>
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <script language="javascript">
+         angular
+            .module('firstApplication', ['ngMaterial'])
+            .controller('cardController', cardController);
+
+         function cardController ($scope) {            
+         }  
+      </script>      
+   </head>
+   <body ng-app="firstApplication">  
+      <md-card>
+        
+         <md-card-header>
+            <md-card-header-text>
+               <span class="md-title">History of Computers</span>
+               </md-card-header-text>
+         </md-card-header>
+         <md-card-title>
+            <md-card-title-text>
+               <span class="md-headline">HTML5</span>
+            </md-card-title-text>
+         </md-card-title>
+         <md-card-actions layout="row" layout-align="start center">
+            <md-button>Download</md-button>
+            <md-button>Start</md-button>
+            <md-card-icon-actions>
+               <md-button class="md-icon-button" aria-label="icon">
+                  <md-icon class="material-icons">add</md-icon>
+               </md-button>
+            </md-card-icon-actions>
+         </md-card-actions>
+         <md-card-content>
+            <p>The history of computing is longer than the history of computing hardware and modern computing technology and includes the history of methods intended for pen and paper or for chalk and slate, with or without the aid of tables. The timeline of computing presents a summary list of major developments in computing by date</p>
+            <p>In the 5th century BC in ancient India, the grammarian Pāṇini formulated the grammar of Sanskrit in 3959 rules known as the Ashtadhyayi which was highly systematized and technical. Panini used metarules, transformations and recursions</p>
+            </p>Mechanical analog computer devices appeared again a thousand years later in the medieval Islamic world and were developed by Muslim astronomers, such as the mechanical geared astrolabe by Abū Rayhān al-Bīrūnī,[5] and the torquetum by Jabir ibn Aflah</p>
+         </md-card-content>
+      </md-card>
+   </body>
+</html>
