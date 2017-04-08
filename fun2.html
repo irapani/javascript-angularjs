@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> functions with parameters / variable scope </title>
+</head>
+<body>
+<script>
+	function addNumbers(num1,num2) {
+		var answer = num1 + num2;
+		document.write(answer + "<br/>");
+	}	
+		addNumbers(2,4);
+		addNumbers(15,3);
+		addNumbers(12,24);
+
+		//	var Champion = "fizz"; // global
+	function printChampion() {
+		var Champion = "fizz";// local
+		document.write(Champion + " inside function <br/>");
+	}
+
+	printChampion();
+	document.write(Champion + " out side function <br/>")
+</script>
+</body>
+</html>
