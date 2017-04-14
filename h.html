@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Suketu </title>
+	<script type="text/javascript">
+		function callme(){
+			if (document.getElementById("demo").innerHTML=="this is Default Paragraph.")
+			{
+				document.getElementById("demo").innerHTML=="you clicked me";
+			}
+				else{
+					document.getElementById('demo').innerHTML="this is Default Paragraph";
+				}
+		}
+</script>
+</head>
+<body>
+	<p id="demo"> this is Default </p>
+	<button type="button" onclick="callme()"> Click Here </button>
+
+</body>
+
+</html>
