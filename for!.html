@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> for ! </title>
+</head>
+<body>
+<p id="demo"> </p>
+<p id="demo1"> </p>
+<button type="button" onclick="displayPersons()"> Display Persons </button>
+</body>
+<script type="text/javascript">
+	var persons = ["suketu","kumar","uday","harish","Guru"];
+	function displayPersons() {
+		var i,len = persons.length, text = "";
+		for(i=0; i<len; i++){
+			text += persons[i] + "<br>";
+		}
+		document.getElementById('demo').innerHTML = text;
+		document.getElementById('demo1').innerHTML = "total no of elements in arrays " + len;
+	}
+</script>
+</html>

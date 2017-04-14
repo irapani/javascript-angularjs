@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> for loop with array </title>
+</head>
+<body>
+	EnterNumber: <input type="text" name="" id="demo" />
+	<button onclick="myFunction()"> Try me </button>
+	<p id="demo1"></p>
+</body>
+<script type="text/javascript">
+	function myFunction(){
+		var message;
+		var value = document.getElementById("demo").value;
+		if (value < 10){
+			message = "Number is less than 10";
+		} else if (value <= 30){
+			message ="Number is less than or equal to 30"
+		} else {
+			message = "Number is greater than 30";
+		}
+			document.getElementById('demo1').innerHTML = message;
+	}
+</script>
+</html>
