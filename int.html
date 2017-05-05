@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+
+</head>
+<body>
+<script type="text/javascript">
+	/*var p = {
+		"a":1,
+		"b" : "xyz",
+		"c" : {
+			"a": 1,
+			"b" : "xyz"
+		}
+	}
+
+	//console.log(p);
+
+	function TMXPrint(o) {
+			console.log(o)
+	}
+
+	TMXPrint(p);
+
+	console.log(1);
+	console.log("abc");
+
+	//
+
+	function takeOverConsole(){
+    var original = window.console
+    window.console = {
+        log: function(){
+            // do sneaky stuff
+            original.log.apply(original, arguments)
+        }
+        , warn: function(){
+            // do sneaky stuff
+            original.warn.apply(original, arguments)
+        }
+        , error: function(){
+            // do sneaky stuff
+            original.error.apply(original, arguments)
+        }
+    }
+}
+
+		takeOverConsole(); 
+
+
+		//
+		function takeOverConsole(){
+    var console = window.console
+    if (!console) return
+    function intercept(method){
+        var original = console[method]
+        console[method] = function(){
+            var message = Array.prototype.slice.apply(arguments).join(' ')
+            // do sneaky stuff
+            original.call(console, message)
+        }
+    }
+    var methods = ['log', 'warn', 'error']
+    for (var i = 0; i < methods.length; i++)
+        intercept(methods[i])
+}
+		takeOverConsole();
+
+		//
+
+		function takeOverConsole(){
+    var console = window.console
+    if (!console) return
+    function intercept(method){
+        var original = console[method]
+        console[method] = function(){
+            // do sneaky stuff
+            if (original.apply){
+                // Do this for normal browsers
+                original.apply(console, arguments)
+            }else{
+                // Do this for IE
+                var message = Array.prototype.slice.apply(arguments).join(' ')
+                original(message)
+            }
+        }
+    }
+    var methods = ['log', 'warn', 'error']
+    for (var i = 0; i < methods.length; i++)
+        intercept(methods[i])
+}
+
+
+//
+
+
+function log (msgOrObj){
+	if(dev_mode){
+		console.log({
+			'message': msgOrObj,
+			'caller': arguments.callee.caller.toString()
+		});
+	}
+}
+
+var myObj = {
+	"testProp" : true
+};
+
+myObj.myMethod = function() {
+	console.log("function in object");
+};
+		myObj.myMethod(); */
+
+		//
+
+		function takeOverConsole(){
+    var original = window.console
+    window.console = {
+        log: function(){
+            // do sneaky stuff
+            original.log.apply(original, arguments)
+        }
+        , warn: function(){
+            // do sneaky stuff
+            original.warn.apply(original, arguments)
+        }
+        , error: function(){
+            // do sneaky stuff
+            original.error.apply(original, arguments)
+        }
+    }
+}
+
+		takeOverConsole(); 
+
+
+
+</script>
+
+</body>
+</html>

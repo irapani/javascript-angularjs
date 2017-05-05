@@ -1,0 +1,52 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/wijmo.css" />
+  <link href="css/app.css" rel="stylesheet" />
+
+  <script src="scripts/angular.js"></script>
+  <script src="scripts/wijmo.min.js"></script>
+  <script src="scripts/wijmo.grid.min.js"></script>
+  <script src="scripts/wijmo.angular.min.js"></script>
+  <script src="scripts/app.js"></script>
+</head>
+<body ng-app="app" ng-controller="appCtrl">
+
+  <wj-flex-grid items-source="data">
+      <!-- grid -->
+    <wj-flex-grid-column
+      header="SNo"
+      binding="SNo"
+      is-read-only="true">
+    </wj-flex-grid-column>
+    <wj-flex-grid-column
+      header="Number"
+      binding="Number">
+    </wj-flex-grid-column>
+    <wj-flex-grid-column 
+      header="Date"
+      binding="date">
+    </wj-flex-grid-column>
+    <wj-flex-grid-column 
+      header="text"
+      binding="text">
+    </wj-flex-grid-column>
+    <wj-flex-grid-column
+      header="Alpha"
+      binding="Alpha">
+    </wj-flex-grid-column>
+
+    <!-- cell freez 
+    <wj-flex-grid
+      control="frozenFlex"
+      items-source="data" 
+      frozen-rows="5">
+    </wj-flex-grid>-->
+    <wj-flex-grid
+      control="frozenFlex"
+      items-source="data" 
+      frozen-column="5">
+    </wj-flex-grid>
+  </wj-flex-grid>
+</body>
+</html>
